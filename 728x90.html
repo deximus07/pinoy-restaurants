@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>728 x 90</title>
+    <style>
+    
+    /* - - - - - - - Universal styles: */
+
+    * {
+        transition: all 0.3s ease-in-out;
+        padding: 0;
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: gray;
+        margin: 0 auto;
+        width: 728px;
+        height: 90px;
+        border: 0;
+        font-size: 0;
+    }
+        
+   #main-cont {
+        background-color: lightgreen;
+        margin: 300px auto 0;
+        width: 728px;
+        height: 90px;
+        border: 0;
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+    
+    #animate-div {
+        top: -85px;
+        width: 3000px;
+        height: 183px;
+        left: 0px;
+        background-image: url("images/bg_01.png");
+        background-size: contain;
+        display: inline-block;
+        position: absolute;
+        z-index: 100;
+        
+    -webkit-animation-name: road-trip;
+            animation-name: road-trip;
+            
+  -webkit-animation: road-trip 5s linear 3;
+     -moz-animation: road-trip 5s linear 3;
+      -ms-animation: road-trip 5s linear 3;
+       -o-animation: road-trip 5s linear 3;
+          animation: road-trip 5s linear 3;
+
+
+    }
+
+    @keyframes road-trip {
+
+        0% {
+            left: 0px;
+        }
+        
+        100% {        
+            left: -1000px;
+        }
+
+    }
+
+    @-webkit-keyframes road-trip {
+    }
+
+
+
+
+    #car {
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        bottom: 10px;
+        left: 25px;
+        z-index: 200;
+    }
+
+    #purplecar {
+        width: 100%;
+    }
+
+    #logo {
+        top: 0px;
+        right: 0;
+        position: absolute;
+        width: 20%;
+        height: 90px;
+        background-image: linear-gradient(to right, red , blue);
+        z-index: 300;
+    }
+    
+    #sun, #dex{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 30px;
+    }
+
+    #sun {
+        -webkit-animation-name: rotating-sun;
+                animation-name: rotating-sun;
+                
+    -webkit-animation: rotating-sun 8s linear infinite;
+       -moz-animation: rotating-sun 8s linear infinite;
+        -ms-animation: rotating-sun 8s linear infinite;
+         -o-animation: rotating-sun 8s linear infinite;
+            animation: rotating-sun 8s linear infinite;
+
+
+    }
+
+    #dex {
+        z-index: 5;
+        height: 50px;
+        top: 20px;
+    }
+
+    @keyframes rotating-sun {
+
+        0% {
+            transform: rotate(0deg);
+
+        }
+        
+        100% {        
+            transform: rotate(360deg);
+
+        }
+    }
+
+    @-webkit-keyframes rotating-sun {
+
+        0% {
+            transform: rotate(0deg);
+
+        }
+        
+        100% {        
+            transform: rotate(360deg);
+
+        }
+    }
+    
+    
+    
+    
+    </style>
+
+
+</head>
+<body>
+
+    <div id="main-cont">
+
+        <div id="animate-div">
+
+        </div>
+
+        <div id="car">
+            <img src="./images/car.png" id="purplecar" alt="">
+        </div>
+
+        <div id="logo">
+            <img src="./images/sun.png" id="sun" alt="">
+            <img src="./images/dex.png" id="dex" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- <div id="temp">
+        <img src="./images/sun.png" id="sun" alt="">
+        <img src="./images/dex.png" id="dex" alt="">
+    </div> -->
+    
+</body>
+</html>

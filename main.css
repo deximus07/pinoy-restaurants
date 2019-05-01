@@ -1,0 +1,323 @@
+/* - - - - - - - Universal styles: */
+
+* {
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f0fff0;
+    text-decoration: none;
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/background.jpeg);
+    background-color: grey;
+    color: white;
+    width: 100%;
+}
+
+/*----Navigation Bar----*/
+
+nav {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    padding-top: 27px;
+    z-index: 100;
+    background-color: #000000;
+}
+
+#nav-title{
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    height: 50px;
+    text-align: left;
+    width: 49%;
+    padding-left: 25px;
+    vertical-align: top;
+    z-index: 56;
+    color: #ffffff;
+}
+
+#nav-select {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    z-index: 52;
+}
+
+.nav-button:hover {
+    background-color: goldenrod;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: -5px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.nav-button {
+    width: 24%;
+    height: 50px; 
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 14px;
+}
+
+/*----Hamburger----*/
+
+#hamburger {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -200px;
+    right: 25px;
+    z-index: 57;
+}
+
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+.hamline {
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-top: 8px;
+}
+
+/*----Mobile Menu----*/
+#black-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100px;
+    z-index: 40;
+    background-color: #000000;
+}
+
+#mobile-menu {
+    position: absolute;
+    left:  0px;
+    top: -400px;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
+    background-color: #000000;
+    z-index: 30;
+}
+
+#mobile-menu:hover {
+    cursor: pointer;
+}
+
+.mob {
+    height: 40px;
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+#mob02 {
+    border-bottom: 1px solid #ffffff;
+}
+
+/*----Footer Section----*/
+
+#footer {
+    font-size: 0;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+#footer li {
+    list-style-type: none;
+}
+
+.feet {
+    font-size: 15px;
+    width: 33.3%;
+    display: inline-block;
+    height: 300px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#foot-details {
+    text-align: left;
+    color: #fff;
+}
+
+#details-cont {
+    width: 80%;
+    margin: 100px auto 0;
+
+}
+
+#signature {
+    font-family: 'Shojumaru', cursive;
+    text-align: center;
+    color: rgb(243, 56, 56);
+    font-size: 60px;
+    text-shadow: 1px 1px 1px #fff;
+    padding-top: 105px;
+}
+
+.feet img {
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 60px; 
+}
+
+
+
+/*----End of Footer Section----*/
+
+article {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    font-size: 50px;
+    color: goldenrod;
+}
+
+#text01 {
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 250px;
+}
+
+#text02 { 
+    text-align: center;
+}
+
+/*----Button----*/
+
+.button {
+    background: rgb(243, 56, 56);
+    margin : 0 auto;
+    width : 200px;
+    height : 60px;
+    text-align : center;
+    cursor : pointer;
+    border-radius: 3px;
+    color: white;
+    font-size: 30px;
+}
+
+.button-text {
+    padding-top: 12px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+/*----End of Button----*/
+
+
+#temp {
+    background: rgb(243, 56, 56);
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#sun, #dex{
+    width: 100%;
+    
+}
+
+#sun {
+    -webkit-animation-name: rotating-sun;
+            animation-name: rotating-sun;
+            
+  -webkit-animation: rotating-sun 8s linear infinite;
+     -moz-animation: rotating-sun 8s linear infinite;
+      -ms-animation: rotating-sun 8s linear infinite;
+       -o-animation: rotating-sun 8s linear infinite;
+          animation: rotating-sun 8s linear infinite;
+
+
+}
+
+#dex {
+    z-index: 5;
+    position: absolute;
+    top: 50px;
+}
+
+
+@keyframes rotating-sun {
+
+    0% {
+        transform: rotate(0deg);
+
+    }
+    
+    100% {        
+        transform: rotate(360deg);
+
+    }
+}
+
+@-webkit-keyframes rotating-sun {
+
+    0% {
+        transform: rotate(0deg);
+
+    }
+    
+    100% {        
+        transform: rotate(360deg);
+
+    }
+}
+
+
+#medium03 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

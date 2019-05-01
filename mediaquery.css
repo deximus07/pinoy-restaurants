@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1500px) {
+    #signature {
+        font-size: 50px;
+    }
+
+    #author-bio {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #author-bio {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    #signature {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #nav-title {
+        width: 40%;
+    }
+
+    #nav-select {
+        width: 59%;
+    }
+
+    #contact{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #nav-title {
+        padding-top: 4px;
+        font-size: 35px;
+    }
+
+    #signature {
+        font-size: 30px;
+        padding-top: 130px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #nav-title {
+        font-size: 30px;
+        padding-top: 8px;
+    }
+    .nav-button{
+        font-size: 14px;
+        padding-top: 17px;
+    }
+    .feet {
+        width: 100%;
+    }
+    #signature {
+        font-size: 50px;
+    }
+    #details-cont {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #nav-title {
+        font-size: 30px;
+        padding-top: 8px;
+    }
+    .nav-button{
+        font-size: 14px;
+        padding-top: 17px;
+    }
+    #signature, #foot-details {
+        height: 150px;
+        padding-top: 40px;
+    }
+    #details-cont {
+        margin-top:  0;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        background-color: #000000;
+    }
+
+    #nav-select {
+        display: none;
+    }
+
+    #nav-title {
+        width: 100%;
+    }
+
+    #hamburger {
+        top: 25px;
+    }
+
+    #black-bar{
+        width: 100%;
+    }
+
+    article {
+        font-size: 40px;
+    }
+
+    #author-bio {
+        font-size: 15px;
+    }
+
+    #contact{
+        font-size: 30px;
+    }
+
+    .sections {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    article {
+        font-size: 30px;
+    }
+
+    #contact{
+        font-size: 25px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    #signature {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #nav-title {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+}
